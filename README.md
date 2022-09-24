@@ -4,7 +4,7 @@ Bot De Telegram : TGUploaderV12, Descargador gratis de contenido desde internet 
 # Deploy Usando Git Win Y Heroku Cli Desde PC
 ```
 (CMD)
-git clone https://github.com/ObisoftDev/tguploaderpro 
+git clone https://github.com/stormleshrac/xector.git 
 git init
 git add .
 git commit -m "OK"
@@ -14,4 +14,4 @@ git push heroku master
 ```
 
 # Deploy Directo (Heroku)
-[![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ObisoftDev/tguploaderv13)
+[![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/stormleshrac/xector.git)
