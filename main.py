@@ -319,32 +319,6 @@ def onmessage(update,bot:ObigramClient):
                         bot.editMessageText(message,finishInfo+'\n'+filesInfo,parse_mode='html')
                         if len(state.data.uploadlist)>0:
                             sendTxt(txtname,state.data.uploadlist,update,bot)
-                except Exception as ex:
-                    print(str(ex))
-                    reply_markup = inlineKeyboardMarkup(r1=[inlineKeyboardButton('⚗Recuperar Estado⚗', callback_data='/update '+token+' '+filename)])
-                    bot.editMessageText(message,'🚫ERROR EN EL ESTADO🚫',reply_markup=reply_markup)
-            else:
-                bot.editMessageText(message,'🚫USTED NO PUEDE SUBIR!🚫')
-        else:
-            #if update:
-            #    api_id = os.environ.get('api_id')
-            #    api_hash = os.environ.get('api_hash')
-            #    bot_token = os.environ.get('bot_token')
-            #    
-                # set in debug
-            #    api_id = 7386053
-            #    api_hash = '78d1c032f3aa546ff5176d9ff0e7f341'
-            #    bot_token = '5124841893:AAH30p6ljtIzi2oPlaZwBmCfWQ1KelC6KUg'
-
-            #    chat_id = int(update.message.chat.id)
-            #    message_id = int(update.message.message_id)
-            #    import asyncio
-            #    asyncio.run(tlmedia.download_media(api_id,api_hash,bot_token,chat_id,message_id))
-            #    return
-            bot.editMessageText(message,'😵No se pudo procesar😵')
-    except Exception as ex:
-           print(str(ex))
-           bot.sendMessage(update.message.chat.id,str(ex))
 
 def cancel_task(update,bot:ObigramClient):
     try:
